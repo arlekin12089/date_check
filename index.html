@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How old am I?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>How old am I?</h1>
+        <img class="avatar"
+            src="https://images.unsplash.com/photo-1569124589354-615739ae007b?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
+            alt="Avatar">
+        <div class="age__container">
+            <span id="name__present"></span>, you are <span id="age"></span>
+        </div>
+
+        <form id="ageCalculator">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" pattern="^([a-zA-Z]+\s)*[a-zA-Z]+$">
+            <label for="dob">Date of Birth</label>
+            <input type="number" placeholder="YYYY" min="1900" max="2100" name="dob" id="dob">
+            <!-- <input type="text" placeholder="YYYY" pattern="^\d{4}$" name="dob" id="dob"> -->
+            <button type="submit">Calculate my age</button>
+        </form>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
